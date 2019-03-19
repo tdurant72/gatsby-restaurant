@@ -4,11 +4,11 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const AboutPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`restaurant`, `eatery`, `quality`]} />
-    <h3>Home</h3>
+    <SEO title="About" keywords={[`restaurant`, `eatery`, `quality`]} />
+    <h3>About Page</h3>
   </Layout>
 )
 
-export default IndexPage
+export default AboutPage

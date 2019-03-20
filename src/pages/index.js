@@ -3,11 +3,17 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import { HomeHeader, Banner, BannerButton } from "../utils"
+import img from "../images/bcg/homeBcg.jpeg"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`restaurant`, `eatery`, `quality`]} />
-    <h3>Home</h3>
+    <HomeHeader img={img}>
+      <Banner title="eatery" subtitle="123 main street, Brooklyn">
+        <BannerButton style={{ margin: "2rem auto" }}>Menu</BannerButton>
+      </Banner>
+    </HomeHeader>
   </Layout>
 )
 

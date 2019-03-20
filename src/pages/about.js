@@ -3,11 +3,15 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import { PageHeader, Banner } from "../utils"
+import aboutImg from "../images/bcg/aboutBcg.jpeg"
 
 const AboutPage = () => (
   <Layout>
     <SEO title="About" keywords={[`restaurant`, `eatery`, `quality`]} />
-    <h3>About Page</h3>
+    <PageHeader img={aboutImg}>
+      <Banner title="About Us" subtitle="what makes us a unique eatery" />
+    </PageHeader>
   </Layout>
 )
 

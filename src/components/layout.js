@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Navbar from "./globals/navbar/Navbar"
+import Footer from '../components/globals/Footer'
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <Navbar />
       {children}
+      <Footer />
     </React.Fragment>
   )
 }
